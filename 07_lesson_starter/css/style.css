@@ -5,3 +5,24 @@ body {
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
 }
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+}
+
+a:visited{
+    color:purple;
+
+}
+
+a:hover , a:focus{
+    color:skyblue;
+    opacity:0.7;
+    background-color: black;
+}
+
+a:active{
+    color:red;
+}
