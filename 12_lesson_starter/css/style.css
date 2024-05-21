@@ -22,3 +22,17 @@ body {
   padding: 1rem;
   break-inside: avoid;
 }
+
+.colums .quote{
+  margin-top:1rem;
+  font-size: 3rem;
+  text-align: center;
+  color:#333;
+  column-span:all;
+
+}
+
+
+.nowrap{
+  white-space: nowrap;
+}
