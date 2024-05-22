@@ -6,12 +6,33 @@
   box-sizing: border-box;
 }
 
+img{
+  display: block;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   min-height: 100vh;
 }
 
+.example{
+  margin-top: 1rem;
+  padding-left:20px;
+  border:1px solid red;
+}
 
+.example img{
+  width:25%;
+  height:auto;
 
+}
+.profile-pic-figure{
+  width:35%;
+}
 
-
+.profile-pic-figure img {
+  width:100%;
+  height: auto;
+  min-width: 100px;
+  border : 5px double grey;
+}
