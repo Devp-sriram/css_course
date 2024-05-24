@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Media Queries</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <h1>Header</h1>
-      <nav><h2>Nav</h2></nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Mini-project</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <main>
-      <h2>Main</h2>
+<body>
+  <header>
+    <h1>Our staff</h1>
+    <nav>
+      <a href="#profile1">alan</a>
+      <a href="#profile2">stu</a>
+      <a href="#profile3">stu's gf</a>
+    </nav>
+  </header>
+
+  <main>
+    <article id="profile1" class="card">
+      <figure>
+        <img src="./img/profile1-500x500.png" alt="alan" width="500" height="500">
+        <figcaption>Alan</figcaption>
+      </figure>
+      <p><q>I do crazy things</q></p>
+    </article>
+
+    <article id="profile2"  class="card">
+        <figure>
+          <img src="./img/profile2-500x500.png" alt="stu" width="500" height="500">
+          <figcaption>stu</figcaption>
+        </figure>
+        <p><q>I'm a dentist</q></p>
+    </article>
+    
+    <article id="profile3"  class="card">
+          <figure>
+            <img src="./img/profile3-500x500.png" alt="stu's vegas gf" width="500" height="500">
+            <figcaption><span class="nowrap">stu's vegas gf</span></figcaption>
+          </figure>
+          <p><q>stu's gf from las vegas</q></p>
+        </article>
     </main>
 
-    <footer>
-      <h2>Footer</h2>
-    </footer>
-  </body>
+      <footer>
+        <p>&copy; Acme Co.</p>
+      </footer>
+</body>
+
 </html>
