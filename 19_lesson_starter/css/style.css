@@ -106,6 +106,27 @@ footer {
   text-align: center;
 }
 
+.card figcaption::before{
+  content: '✨';
+  display: block;
+
+}
+
+.card p{
+  
+}
+
+.card p::before{
+  content: open-quote;
+  font-size: 3rem;
+  position: absolute;
+  top: -0.25em;
+  left:-0.5em;
+}
+.card p::after{
+  content: close-quote;
+}
+
 /* || SMALL */
 @media screen and (min-width: 576px) {
   main {

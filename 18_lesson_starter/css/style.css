@@ -32,8 +32,7 @@ body {
   flex-direction: column;
 }
 
-header,
-footer {
+header,footer{
   position: sticky;
   background-color: #1e293b;
   color: whitesmoke;
@@ -42,6 +41,7 @@ footer {
 
 header {
   top: 0;
+  color: red;
 }
 
 nav {
@@ -54,12 +54,16 @@ nav {
 
 }
 
-nav a ,nav a:visited{
+nav a{
   color:#000;
 }
 
-nav a:hover ,nav a:focus{
+nav :is(a:hover ,a:focus) {
   color: hsla( 0 , 0 , 20% , 0.6)
+}
+
+nav  a:active{
+  color:red;
 }
 
 main {
@@ -89,6 +93,9 @@ footer {
   align-items:center;
 }
 
+.card:target{
+  border: 2px solid rebeccapurple;
+}
 .card figure{
   display:flex;
   flex-flow:column nowrap;
@@ -96,16 +103,26 @@ footer {
 
 .card img{
   border : 2px solid #000;
+  border-radius: 50%;
 } 
 
+.card img:not([alt]){
+  border: 10px solid #f00;
+}
+
+.card:nth-child(even){
+  background-color: papayawhip;
+}
 .card figcaption{
   font-weight: bolder;
   text-align: center;
   font-size:2rem;
   margin:1rem;
 
+}
 
-
+.card figcaption::after{
+  content: "";
 }
 /* || SMALL */
 @media screen and (min-width: 576px) {
